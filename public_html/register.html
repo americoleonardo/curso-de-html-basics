@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#">Listar veículos</a>
+            <a class="nav-link active" href="#">Registrar veículo</a>
+        </nav>
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Registrar veículo</h1>
+                <hr>
+
+                <form action="index.html">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Marca:</label>
+                                <select class="form-control" name="modeloDoVeiculo" id="marcaDoVeiculo">
+                                    <option value="0">Selecione a marca</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Volksvagen">Volksvagen</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Modelo:</label>
+                                <select class="form-control" name="modeloDoVeiculo" id="modeloDoVeiculo">
+                                    <option value="0">Selecione o modelo</option>
+                                    <optgroup label="Chevrolet">
+                                        <option value="Celta">Celta</option>
+                                    </optgroup>
+                                    <optgroup label="Volksvagen">
+                                        <option value="Kombi">Kombi</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <label class="form-label">Cor:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="branco" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Branco
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="vermelho">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Vermelho
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <label class="form-label">Período de estadia:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Manhã" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Manhã
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Tarde" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Tarde
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Placa do veículo:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Dados do Proprietário</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label class="form-label">Nome do Proprietário:</label>
+                                <input type="text" required name="nomeDoProprietario" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label class="form-label">E-mail:</label>
+                                <input type="email" required name="emailDoProprietario" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label class="form-label">Data de nascimento:</label>
+                                <input type="date" name="dataDeNascimento" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label class="form-label">Senha:</label>
+                                <input type="password" required name="senhaDoProprietario" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
